@@ -25,7 +25,7 @@ function Login(props) {
   return (
     <div className={styles.container}>
       <div className={{ width: 200 }}>
-        <h1>Login Page</h1>
+        <h1>Accede a tu espacio</h1>
         {errorMessage ? <p className={styles.error}>{errorMessage}</p> : null}
         <form>
           <div className={styles.loginForm}>

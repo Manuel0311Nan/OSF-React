@@ -20,7 +20,7 @@ function Dashboard(props) {
           Logout
         </button>
       </div>
-      <p>Welcome {userDetails.user.email}</p>
+      <p>Welcome {userDetails.user.email} a tu espacio "One Second Faith"</p>
     </div>
   );
 }

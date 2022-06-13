@@ -2,17 +2,24 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import routes from "./config/routes";
 import { AuthProvider } from "./context";
 import "./App.css";
-import AuthGuard from "./components/AuthGuard";
+import AuthGuard from "./components/auth/AuthGuard";
 import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
 import Dashboard from "./pages/Dashboard";
 import React from "react";
-
+// import AuthRoute from "./components/auth/Authroute";
+// import { signIn } from "./components/auth/auth";
 function App() {
+  // const [user, setUser] = useState(null);
+  // const authenticated = user !== null;
+
+  // const login = ({ email, password }) => setUser(signIn({ email, password }));
+  // const logout = () => setUser(null);
+
   return (
     <AuthProvider>
       <Router>
-      <Header/>
+        <Header />
         <Routes>
         <Route path='*' element={<Navigate to="/" />} />
           {routes.map((route) => (
@@ -33,7 +40,6 @@ function App() {
                 </React.Suspense>
               }
             />
-
         </Routes>
         <Footer/>
       </Router>

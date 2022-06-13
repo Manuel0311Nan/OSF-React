@@ -5,6 +5,7 @@ import PageNotFound from "../pages/NotFound"
 import Home from "../pages/Home/Home";
 import Tour from "../pages/Tour/Tour";
 import Merch from "../pages/Merch/Merch";
+import Cesta from "../pages/cesta/Cesta";
 
 const routes = [
     {
@@ -37,6 +38,10 @@ const routes = [
     {
         path: "/merch",
         element: <Merch/>,
+    },
+    {
+        path: "/cesta",
+        element: <Cesta/>,
     }
 ]
 
