@@ -7,6 +7,7 @@ import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
 import Dashboard from "./pages/Dashboard";
 import React from "react";
+
 // import AuthRoute from "./components/auth/Authroute";
 // import { signIn } from "./components/auth/auth";
 function App() {
