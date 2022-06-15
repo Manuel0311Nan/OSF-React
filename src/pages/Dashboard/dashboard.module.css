@@ -7,4 +7,9 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    padding-top: 7em;
+
+}
+.dashboardPage__name{
+    font-family: 'Tai Heritage Pro', serif;
 }

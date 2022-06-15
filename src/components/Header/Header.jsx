@@ -1,9 +1,24 @@
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Header.module.scss'
 import title from '../../assets/images/title.PNG'
+// import { AuthProvider } from '../../context/context'
+import { AuthStateContext } from '../../context/context'
+// import { useAuthState } from '../../context/context'
+
 export const Header = () => {
+
+  const [userLogger, setUserLogger] = useState(false);
+  const { user } = useContext(AuthStateContext)
+  
+  useEffect(() => {
+    if (user) {
+      setUserLogger(true)
+    }
+  }, [user])
+  console.log(user);
   return (
+
       <div className={styles.menu}>
       <Link className={styles.menu__nav__li__link} to="/home">
       <img src={title} alt="logo" className= {styles.menu__img}>
@@ -26,19 +41,21 @@ export const Header = () => {
                           Merch
                     </Link>
                   </li>
-           {/* {authenticated ? (
-            <li className='nav-item'>
-              <Link className='flex-sm-fill text-sm-center nav-link' to="/cesta">
-                Mi perfil
+                  <>
+            {userLogger ?
+              <li className={styles.menu__nav__li}>
+              <Link className={styles.menu__nav__li__link} to="/dashboard">
+                Mi perfil OSF
               </Link>
-            </li> */}
-            <li className={styles.menu__nav__li}>
+            </li> :
+              <li className={styles.menu__nav__li}>
               <Link className={styles.menu__nav__li__link} to="/login">
                 Acceder
               </Link>
             </li>
+            }</>
           </ul>
           </div>
-      </div>
+      </div >
   )
 }

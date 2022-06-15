@@ -1,7 +1,7 @@
 import React, { useReducer } from "react";
 import { initialState, AuthReducer } from './reducer'
 
-const AuthStateContext = React.createContext();
+export const AuthStateContext = React.createContext();
 const AuthDispatchContext = React.createContext();
 
 export function useAuthState() {
@@ -19,7 +19,7 @@ export function useAuthDispatch() {
     }
     return context;
 }
-
+//propaga el user a toda a la app
 export const AuthProvider = ({ children }) => {
     const [user, dispatch] = useReducer(AuthReducer, initialState);
 

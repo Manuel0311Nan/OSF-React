@@ -1,7 +1,5 @@
 import React from "react";
-import grupoCalle from "../../assets/images/grupoCalle.jpg";
 import videoClip from "../../assets/images/videoclip.mp4";
-import camiMerch from "../../assets/images/merch.PNG";
 import styles from "./Home.module.scss";
 import { Link } from "react-router-dom";
 const Home = () => {
@@ -15,15 +13,17 @@ const Home = () => {
           alt="mainGrupo"
         ></img> */}
         <div className={styles.home__img}>
-          <div className={styles.home__img__text}></div>
+          <div className={styles.home__img__card}>
+            <p className={styles.home__img__cardText}>TOUR</p>
+          </div>
         </div>
       </Link>
       <Link  to="/merch">
-        <img
-          className={styles.home__img2}
-          src={camiMerch}
-          alt="mainGrupo"
-        ></img>
+      <div className={styles.home__img2}>
+          <div className={styles.home__img2__card}>
+            <p className={styles.home__img2__cardText}>Merchandising</p>
+          </div>
+        </div>
       </Link>
     </div>
   );

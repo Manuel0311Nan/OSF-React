@@ -20,16 +20,53 @@
         width: 1200px;
         height: 795px;
         margin:30px;
-
+        &__card{
+            position: absolute;
+            overflow: hidden;
+            width: 1200px;
+            height: 795px;
+            background-color: rgba(31, 31, 31, 0.621);
+            transition: opacity 0.2s;
+            opacity: 0;
+            &Text{
+                position: absolute;
+                top: 40%;
+                left: 38%;
+                color: white;
+               font-size: 100px; 
+               font-family: 'Tai Heritage Pro', serif;
+            }
+        }
     }
-    &__img2{
+    &__img2 {
+        background-image: url("../../assets/images/merch.PNG");
+        background-position-x: center;
+        background-position-y: center;
         width: 1200px;
-        height:795px;
-        border: solid 5px black;
+        height: 795px;
+        margin:30px;
+        &__card{
+            position: absolute;
+            overflow: hidden;
+            width: 1200px;
+            height: 795px;
+            background-color: rgba(31, 31, 31, 0.621);
+            transition: opacity 0.2s;
+            opacity: 0;
+            &Text{
+                position: absolute;
+                top: 40%;
+                left: 25%;
+                color: white;
+               font-size: 100px; 
+               font-family: 'Tai Heritage Pro', serif;
+            }
+        }
     }
-
 }
-.home__img:hover{
+.home__img__card:hover {
     opacity: 1;
-
+}
+.home__img2__card:hover {
+    opacity: 1;
 }

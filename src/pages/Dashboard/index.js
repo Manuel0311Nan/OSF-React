@@ -13,9 +13,9 @@ function Dashboard(props) {
     navigate("/"); //navega de nuevo al login sin usuario
   };
   return (
-    <div style={{ padding: 10 }}>
+    <div >
       <div className={styles.dashboardPage}>
-        <h1>Dashboard</h1>
+      <h1 className={styles.dashboardPage__name}>Welcome {userDetails.user.email} a tu espacio "One Second Faith"</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis
           viverra faucibus. In convallis nisl porttitor cursus ultrices. Nullam
@@ -59,13 +59,12 @@ function Dashboard(props) {
           himenaeos. Phasellus vitae viverra tortor. Donec orci sapien, pharetra
           quis semper in, posuere eget nunc. Aliquam interdum aliquam massa non
           pharetra. Integer vulputate libero lorem, a laoreet purus ultricies
-          et.{" "}
+          et.
         </p>
-        <button className={styles.logoutBtn} onClick={handleLogout}>
+      </div>
+      <button className={styles.logoutBtn} onClick={handleLogout}>
           Logout
         </button>
-      </div>
-      <p>Welcome {userDetails.user.email} a tu espacio "One Second Faith"</p>
     </div>
   );
 }
