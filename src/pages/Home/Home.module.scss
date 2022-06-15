@@ -12,10 +12,24 @@
     &__video {
         filter: opacity(95%);
         margin: 4em 0 0 0;
-        width: 70%;
+        width: 40%;
+        padding-top: 5em;
     }
     &__img {
-        width: 100%;
+        background-image: url("../../assets/images/grupoCalle.jpg");
+        width: 1200px;
+        height: 795px;
+        margin:30px;
+
     }
+    &__img2{
+        width: 1200px;
+        height:795px;
+        border: solid 5px black;
+    }
+
+}
+.home__img:hover{
+    opacity: 1;
 
 }

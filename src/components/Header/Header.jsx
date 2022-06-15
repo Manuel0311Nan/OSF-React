@@ -5,8 +5,10 @@ import title from '../../assets/images/title.PNG'
 export const Header = () => {
   return (
       <div className={styles.menu}>
+      <Link className={styles.menu__nav__li__link} to="/home">
       <img src={title} alt="logo" className= {styles.menu__img}>
-          </img>
+      </img>
+      </Link>
       <div className={styles.menu__div}>
               <ul className={styles.menu__nav}>
                   <li className={styles.menu__nav__li}>

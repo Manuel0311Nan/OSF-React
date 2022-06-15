@@ -1,8 +1,8 @@
 import React from 'react'
-
+import styles from "./Merch.module.scss"
 const Merch = () => {
   return (
-    <div>Merch</div>
+    <div className={styles.shop}>Merchandising</div>
   )
 }
 

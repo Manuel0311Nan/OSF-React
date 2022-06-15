@@ -3,7 +3,7 @@ import React from 'react';
 
 import styles from './notfound.module.css';
 
-function NotFound(props) {
+function NotFound() {
 return (
 <div className={styles.container}>
 <h1>Page not found</h1>
