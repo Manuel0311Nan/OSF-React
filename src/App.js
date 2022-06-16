@@ -7,7 +7,7 @@ import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
 import Dashboard from "./pages/Dashboard";
 import React from "react";
-
+import { ThemeProvider } from "./context/Themcontext";
 // import AuthRoute from "./components/auth/Authroute";
 // import { signIn } from "./components/auth/auth";
 function App() {
@@ -20,7 +20,9 @@ function App() {
   return (
     <AuthProvider>
       <Router>
-        <Header />
+        <ThemeProvider>
+          <Header />
+
         <Routes>
         <Route path='*' element={<Navigate to="/" />} />
           {routes.map((route) => (
@@ -42,7 +44,8 @@ function App() {
               }
             />
         </Routes>
-        <Footer/>
+          <Footer />
+          </ThemeProvider>
       </Router>
     </AuthProvider>
   );
