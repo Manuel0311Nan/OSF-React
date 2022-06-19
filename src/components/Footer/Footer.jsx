@@ -4,9 +4,13 @@ import styles from "./Footer.module.scss";
 import facebook from "../../assets/images/facebook.png";
 import instagram from "../../assets/images/instagram(3).png";
 import youtube from "../../assets/images/youtube.png";
+import { useTheme } from "../../context/Themcontext";
 export const Footer = () => {
+  const { theme} = useTheme();
   return (
-      <div className={styles.socialMedia}>
+      <div  style={{
+        backgroundColor: theme.background,
+      }}  className={styles.socialMedia}>
         <a
           href="https://www.facebook.com/search/top?q=one%20second%20faith"
           target="_blank"

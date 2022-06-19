@@ -5,7 +5,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(24, 23, 23, 0.682);
 
+}
+.text{
+    color: rgb(255, 254, 254);
 }
 .formContainer {
     width: 200px;

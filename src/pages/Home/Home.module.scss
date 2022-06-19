@@ -1,72 +1,110 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.home{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url('../../assets/images/logo.jpg');
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #080100;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
 
-    &__video {
-        filter: opacity(95%);
-        margin: 4em 0 0 0;
-        width: 40%;
-        padding-top: 5em;
+  &__video {
+    filter: opacity(95%);
+    margin: 4em 0 0 0;
+    width: 40%;
+    padding-top: 2em;
+  }
+  &__img {
+    background-image: url("../../assets/images/grupoCalle.jpg");
+    width: 1200px;
+    height: 795px;
+    margin: 30px;
+    &__card {
+      position: absolute;
+      overflow: hidden;
+      width: 1200px;
+      height: 795px;
+      background-color: rgba(31, 31, 31, 0.621);
+      transition: opacity 0.2s;
+      opacity: 0;
+      &Text {
+        position: absolute;
+        top: 40%;
+        left: 38%;
+        color: white;
+        font-size: 100px;
+        font-family: "Tai Heritage Pro", serif;
+      }
     }
-    &__img {
-        background-image: url("../../assets/images/grupoCalle.jpg");
-        width: 1200px;
-        height: 795px;
-        margin:30px;
-        &__card{
-            position: absolute;
-            overflow: hidden;
-            width: 1200px;
-            height: 795px;
-            background-color: rgba(31, 31, 31, 0.621);
-            transition: opacity 0.2s;
-            opacity: 0;
-            &Text{
-                position: absolute;
-                top: 40%;
-                left: 38%;
-                color: white;
-               font-size: 100px; 
-               font-family: 'Tai Heritage Pro', serif;
-            }
-        }
+  }
+  &__img2 {
+    background-image: url("../../assets/images/merch.PNG");
+    background-position-x: center;
+    background-position-y: center;
+    width: 1200px;
+    height: 795px;
+    margin: 30px;
+    &__card {
+      position: absolute;
+      overflow: hidden;
+      width: 1200px;
+      height: 795px;
+      background-color: rgba(31, 31, 31, 0.621);
+      transition: opacity 0.2s;
+      opacity: 0;
+      &Text {
+        position: absolute;
+        top: 40%;
+        left: 25%;
+        color: white;
+        font-size: 100px;
+        font-family: "Tai Heritage Pro", serif;
+      }
     }
-    &__img2 {
-        background-image: url("../../assets/images/merch.PNG");
-        background-position-x: center;
-        background-position-y: center;
-        width: 1200px;
-        height: 795px;
-        margin:30px;
-        &__card{
-            position: absolute;
-            overflow: hidden;
-            width: 1200px;
-            height: 795px;
-            background-color: rgba(31, 31, 31, 0.621);
-            transition: opacity 0.2s;
-            opacity: 0;
-            &Text{
-                position: absolute;
-                top: 40%;
-                left: 25%;
-                color: white;
-               font-size: 100px; 
-               font-family: 'Tai Heritage Pro', serif;
-            }
-        }
-    }
+  }
 }
 .home__img__card:hover {
-    opacity: 1;
+  opacity: 1;
 }
 .home__img2__card:hover {
-    opacity: 1;
+  opacity: 1;
+}
+@media screen and (max-width: 1000px) {
+  .home {
+    &__img {
+        
+      background-size: contain;
+      &__card {
+        background-size: cover;
+      }
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .home {
+    &__img {
+      width: 250px;
+      height: 150px;
+      &__card {
+        width: 250px;
+        height: 150px;
+        &Text{
+          font-size: 10px;
+        }
+      }
+    }
+    &__img2 {
+      width: 250px;
+      height: 150px;
+      &__card {
+        width: 250px;
+        height: 150px;
+        &Text{
+          font-size: 10px;
+        }
+      }
+    }
+  }
 }

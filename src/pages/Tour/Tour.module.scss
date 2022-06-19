@@ -1,8 +1,8 @@
 .container {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 7em;
-    background-image: url('../../assets/images/logo.jpg');
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+background-color: #080100;
+background-image: url("https://www.transparenttextures.com/patterns/notebook-dark.png");
   }
