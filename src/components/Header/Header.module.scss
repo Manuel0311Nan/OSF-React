@@ -26,7 +26,7 @@
           margin-top: 1em;
   
           &__link{
-              color: rgb(100, 8, 8); 
+              color: rgb(4, 4, 4); 
   
           }
       }
@@ -47,7 +47,6 @@
   width: 3%;
   display: flex;
   justify-content: center;
-  background-color: rgb(255, 255, 255);
   padding: -1;
 
 }
@@ -58,10 +57,10 @@
 @media screen and (max-width:950px) {
   .menu{
     display: flex;
-    position:static;
-    input:checked  ~ ul{
-      display:block;
-    }
+
+    // input:checked  ~ ul{
+    //   display:block;
+    // }
     &__nav{
       display: none;
     }
@@ -70,7 +69,6 @@
 @media screen and (max-width: 450px) {
   .menu{
     display: flex;
-    position:static;
     &__img{
       width: 90px;
       height: 50px;

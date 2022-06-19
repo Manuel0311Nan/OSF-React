@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { loginUser, useAuthState, useAuthDispatch } from "../../context";
+import VideoAccess from "../../core/videoBackground/VideoAccess";
 import styles from "./login.module.css";
 
 function Login(props) {
@@ -24,13 +25,14 @@ function Login(props) {
 
   return (
     <div className={styles.container}>
+    <VideoAccess videoId='PUJvN3-mOdY'/>
       <div className={{ width: 200 }}>
-        <h1>Accede a tu espacio</h1>
+        <h1 className={styles.text}>Accede a tu espacio</h1>
         {errorMessage ? <p className={styles.error}>{errorMessage}</p> : null}
         <form>
           <div className={styles.loginForm}>
             <div className={styles.loginFormItem}>
-              <label htmlFor="email">Username</label>
+              <label className={styles.text} htmlFor="email">Username</label>
               <input
                 type="text"
                 id="email"
@@ -40,7 +42,7 @@ function Login(props) {
               />
             </div>
             <div className={styles.loginFormItem}>
-              <label htmlFor="password">Password</label>
+              <label className={styles.text} htmlFor="password">Password</label>
               <input
                 type="password"
                 id="password"

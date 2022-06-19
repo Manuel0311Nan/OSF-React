@@ -4,7 +4,7 @@ import Dashboard from "../pages/Dashboard";
 import PageNotFound from "../pages/NotFound"
 import Home from "../pages/Home/Home";
 import Tour from "../pages/Tour/Tour";
-import Merch from "../pages/Merch/Merch";
+import Songs from "../pages/Songs/Songs";
 
 
 const routes = [
@@ -36,8 +36,8 @@ const routes = [
         element: <Tour/>,
     },
     {
-        path: "/merch",
-        element: <Merch/>,
+        path: "/songs",
+        element: <Songs/>,
     },
 ]
 

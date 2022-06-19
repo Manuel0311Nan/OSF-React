@@ -1,3 +1,4 @@
+import React from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -11,17 +12,9 @@ import AuthGuard from "./components/auth/AuthGuard";
 import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
 import Dashboard from "./pages/Dashboard";
-import React from "react";
 import { ThemeProvider } from "./context/Themcontext";
-// import AuthRoute from "./components/auth/Authroute";
-// import { signIn } from "./components/auth/auth";
+
 function App() {
-  // const [user, setUser] = useState(null);
-  // const authenticated = user !== null;
-
-  // const login = ({ email, password }) => setUser(signIn({ email, password }));
-  // const logout = () => setUser(null);
-
   return (
     <AuthProvider>
       <Router>

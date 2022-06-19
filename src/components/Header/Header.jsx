@@ -19,7 +19,6 @@ export const Header = () => {
       setUserLogger(true);
     }
   }, [user]);
-  console.log(user);
   return (
     <nav
       className={styles.menu}
@@ -27,16 +26,10 @@ export const Header = () => {
         backgroundColor: theme.background,
       }}
     >
-
       <label for="menu" className={styles.menu__div}>
-      <input type="checkbox" id="menu"></input>
+        <input type="checkbox" id="menu"></input>
         <ul className={styles.menu__div__nav}>
-          <li
-            className={styles.menu__div__nav__li}
-            style={{
-              backgroundColor: theme.background,
-            }}
-          >
+          <li className={styles.menu__div__nav__li}>
             <Link
               className={styles.menu__div__nav__li__link}
               style={{
@@ -48,25 +41,13 @@ export const Header = () => {
             </Link>
           </li>
           <li className={styles.menu__div__nav__li}>
-            <Link
-              className={styles.menu__div__nav__li__link}
-              style={{
-                backgroundColor: theme.background,
-              }}
-              to="/tour"
-            >
+            <Link className={styles.menu__div__nav__li__link} to="/tour">
               Tour
             </Link>
           </li>
           <li className={styles.menu__div__nav__li}>
-            <Link
-              className={styles.menu__div__nav__li__link}
-              style={{
-                backgroundColor: theme.background,
-              }}
-              to="/merch"
-            >
-              Merch
+            <Link className={styles.menu__div__nav__li__link} to="/songs">
+              Songs
             </Link>
           </li>
           <>
@@ -74,9 +55,6 @@ export const Header = () => {
               <li className={styles.menu__div__nav__li}>
                 <Link
                   className={styles.menu__div__nav__li__link}
-                  style={{
-                    backgroundColor: theme.background,
-                  }}
                   to="/dashboard"
                 >
                   Mi perfil OSF
@@ -84,13 +62,7 @@ export const Header = () => {
               </li>
             ) : (
               <li className={styles.menu__div__nav__li}>
-                <Link
-                  className={styles.menu__div__nav__li__link}
-                  style={{
-                    backgroundColor: theme.background,
-                  }}
-                  to="/login"
-                >
+                <Link className={styles.menu__div__nav__li__link} to="/login">
                   Acceder
                 </Link>
               </li>
@@ -98,7 +70,6 @@ export const Header = () => {
           </>
         </ul>
       </label>
-
       <Link className={styles.menu__nav__li__img} to="/home">
         <img src={title} alt="logo" className={styles.menu__img}></img>
       </Link>
