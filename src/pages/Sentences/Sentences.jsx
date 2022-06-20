@@ -1,6 +1,8 @@
 import React, { useState, useEffect} from "react";
 import styles from './Sentences.module.scss'
+import { useTheme } from "../../context/Themcontext";
 const Sentences = () => {
+  const { theme } = useTheme();
   const BASEURL =
     "https://62af3129b0a980a2ef3bea9f.mockapi.io/mapianoRajoy/v1";
   const ITEMSURL = "/Sentences";
@@ -30,14 +32,20 @@ const Sentences = () => {
   } else {
     return (
         <figure className={styles.container}> 
-        <h1 className={styles.title}>Opiniones de nuestros fans</h1> 
+        <h1 className={styles.title} style={{
+      color:theme.fontcolor1
+    }}>Opiniones de nuestros fans</h1> 
       <ul className={styles.card}>
         {sentences.map((sentence) => (
           <li className={styles.card__body} key={sentence.id}>
           <img className={styles.card__img}  src={sentence.Image} alt="..." width="120px"/>
           <div className={styles.card_title}>
-            <h2 className={styles.card__title1}> <q>{sentence.Sentence}</q> </h2> 
-            <h3 className={styles.card__title1}>{sentence.Year}</h3>
+            <h2 className={styles.card__title1} style={{
+      color:theme.fontcolor1
+    }}> <q>{sentence.Sentence}</q> </h2> 
+            <h3 className={styles.card__title1} style={{
+      color:theme.fontcolor1
+    }}>{sentence.Year}</h3>
             </div>
           </li>
         ))}

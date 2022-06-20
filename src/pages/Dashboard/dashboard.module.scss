@@ -1,0 +1,29 @@
+.logoutBtn {
+    height: '30px';
+    width: '100px';
+}
+
+.dashboardPage {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 7em;
+    &__name{
+        font-family: 'Special Elite', cursive;
+        text-transform: uppercase;
+    }
+    &__boton{
+        text-decoration: none;
+        padding: 10px;
+        font-weight: 600;
+        font-size: 20px;
+        color: #010101;
+        background-color: rgb(100, 8, 8);
+        border-radius: 6px;
+        border: 2px solid rgb(36, 2, 2);
+        font-family: 'Special Elite', cursive;
+        text-transform: uppercase;
+        margin-bottom: 2em;
+    }
+}

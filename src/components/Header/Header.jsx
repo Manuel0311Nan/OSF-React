@@ -5,7 +5,7 @@ import { AuthStateContext } from "../../context/context";
 // import { useAuthState } from '../../context/context'
 import { useTheme } from "../../context/Themcontext";
 import styles from "./Header.module.scss";
-import title from "../../assets/images/title.PNG";
+import title from "../../assets/images/logo.jpg";
 import tema from "../../assets/images/actualizar.png";
 
 export const Header = () => {
@@ -27,7 +27,7 @@ export const Header = () => {
       }}
     >
       <label for="menu" className={styles.menu__div}>
-        <input type="checkbox" id="menu"></input>
+        {/* <input type="checkbox" id="menu"></input> */}
         <ul className={styles.menu__div__nav}>
           <li className={styles.menu__div__nav__li}>
             <Link

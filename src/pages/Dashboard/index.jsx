@@ -1,21 +1,23 @@
 import React from "react";
 import { useAuthDispatch, logout, useAuthState } from "../../context";
 import { useNavigate } from "react-router-dom";
-import styles from "./dashboard.module.css";
-
+import styles from "./dashboard.module.scss";
+import { useTheme } from "../../context/Themcontext";
 function Dashboard(props) {
   let navigate = useNavigate();
   const dispatch = useAuthDispatch(); // lee el método dispatch del contexto
   const userDetails = useAuthState(); //lee los detalles del usuario del contexto
-
+  const { theme } = useTheme();
   const handleLogout = () => {
     logout(dispatch); //llama a la acción logout
     navigate("/"); //navega de nuevo al login sin usuario
   };
   return (
-    <div >
+    <div>
       <div className={styles.dashboardPage}>
-      <h1 className={styles.dashboardPage__name}>Welcome {userDetails.user.email} a tu espacio "One Second Faith"</h1>
+        <h1 className={styles.dashboardPage__name}>
+          Welcome {userDetails.user.email} a tu espacio "One Second Faith"
+        </h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis
           viverra faucibus. In convallis nisl porttitor cursus ultrices. Nullam
@@ -62,9 +64,15 @@ function Dashboard(props) {
           et.
         </p>
       </div>
-      <button className={styles.logoutBtn} onClick={handleLogout}>
-          Logout
-        </button>
+      <button
+        className={styles.dashboardPage__boton}
+        style={{
+          backgroundColor: theme.background,
+        }}
+        onClick={handleLogout}
+      >
+        Logout
+      </button>
     </div>
   );
 }

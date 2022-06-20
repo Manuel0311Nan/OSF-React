@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -13,12 +13,17 @@ import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
 import Dashboard from "./pages/Dashboard";
 import { ThemeProvider } from "./context/Themcontext";
+import SplashScreen from "./components/SplashScreen/SplashScreen";
 
 function App() {
+  const [splashScreen,setSplashScreen] = useState(true);
+  useEffect(()=>{
+    setTimeout(()=> setSplashScreen(false), 2000)
+  })
   return (
     <AuthProvider>
       <Router>
-        <ThemeProvider>
+      {splashScreen ? (<SplashScreen/>): <><ThemeProvider>
           <Header />
           <Routes>
             <Route path="*" element={<Navigate to="/" />} />
@@ -41,7 +46,8 @@ function App() {
             />
           </Routes>
           <Footer />
-        </ThemeProvider>
+        </ThemeProvider></> }
+        
       </Router>
     </AuthProvider>
   );
