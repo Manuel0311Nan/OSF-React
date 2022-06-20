@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { loginUser, useAuthState, useAuthDispatch } from "../../context";
 import VideoAccess from "../../core/videoBackground/VideoAccess";
-import styles from "./login.module.css";
+import styles from "./login.module.scss";
 
 function Login(props) {
   const [email, setEmail] = useState("");
@@ -28,6 +28,7 @@ function Login(props) {
     <VideoAccess videoId='PUJvN3-mOdY'/>
       <div className={{ width: 200 }}>
         <h1 className={styles.text}>Accede a tu espacio</h1>
+        <h1 className={styles.text}>One Second Faith</h1>
         {errorMessage ? <p className={styles.error}>{errorMessage}</p> : null}
         <form>
           <div className={styles.loginForm}>
@@ -52,7 +53,7 @@ function Login(props) {
               />
             </div>
           </div>
-          <button onClick={handleLogin} disabled={loading}>
+          <button className="btn btn-light" onClick={handleLogin} disabled={loading}>
             login
           </button>
         </form>

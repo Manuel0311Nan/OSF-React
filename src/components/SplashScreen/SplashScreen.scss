@@ -1,0 +1,40 @@
+.splashScreen{
+    @keyframes fadeIn {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+        
+    }
+    @keyframes fadeOut {
+        0%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+        
+    }
+
+.fadeIn{
+    animation: fadeIn ease 1s;
+}
+.fadeOut{
+    animation: fadeOut ease 1s;
+}
+
+height: 100vh;
+align-items: center;
+background-color: black;
+background-image: url(../../assets/images/logo.jpg);
+
+background-repeat: no-repeat;
+}
+.text{
+    font-family: 'Special Elite', cursive;
+    text-transform: uppercase;
+    padding-top:7em;
+    padding-left:16em;
+}

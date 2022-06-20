@@ -6,9 +6,8 @@
   position: fixed;
   z-index: 9;
   &__img {
-    width: 200px;
-    height: 50px;
-    margin-left: -12em;
+    width: 70px;
+    margin-right: 4em;
   }
   &__div{
     display: flex;
@@ -20,11 +19,12 @@
       &__li {
           text-decoration: none;
           list-style: none;
-          font-family: 'Tai Heritage Pro', serif;
+          font-family: 'Special Elite', cursive;
+          text-transform: uppercase;
           font-size: 20px;
           padding-right: 2em;
           margin-top: 1em;
-  
+
           &__link{
               color: rgb(4, 4, 4); 
   
@@ -68,15 +68,26 @@
 }
 @media screen and (max-width: 450px) {
   .menu{
-    display: flex;
+    position: relative;
     &__img{
       width: 90px;
       height: 50px;
       margin-left: 0em;
     }
-    &__nav{
-      display: none;
+    &__div {
+    &__nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      &__li {
+
+          &__link{
+              color: rgb(4, 4, 4); 
+  
+          }
+      }
     }
   }
 }
-
+}

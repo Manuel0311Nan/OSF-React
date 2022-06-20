@@ -1,8 +1,11 @@
 import React from "react";
 import styles from "./Tour.module.scss";
 import Show from "./Show/Show";
+import { Fade } from "react-awesome-reveal";
+import { useTheme } from "../../context/Themcontext";
 // import VideoTour from '../../core/videoBackground/videoTour';
 const Tour = () => {
+  const { theme } = useTheme();
   const tour = [
     {
       when: "18/03/2017",
@@ -46,9 +49,13 @@ const Tour = () => {
     },
   ];
   return (
-      <div className={styles.container}>
+    
+      <div className={styles.container}         style={{
+        backgroundColor: theme.background2,
+      }}>
         {tour.map((show) => {
           return (
+            <Fade slide>
             <Show
               where={show.where}
               when={show.when}
@@ -56,9 +63,11 @@ const Tour = () => {
               how={show.how}
               who={show.who}
             />
+            </Fade>
           );
         })}
       </div>
+
   );
 };
 
