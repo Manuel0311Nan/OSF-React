@@ -17,8 +17,8 @@ export const Header = () => {
   useEffect(() => {
     if (user) {
       setUserLogger(true);
-    } else {
-      setUserLogger(false)
+    }else{
+      setUserLogger(false);
     }
   }, [user]);
   return (
@@ -50,6 +50,11 @@ export const Header = () => {
           <li className={styles.menu__div__nav__li}>
             <Link className={styles.menu__div__nav__li__link} to="/songs">
               Songs
+            </Link>
+          </li>
+          <li className={styles.menu__div__nav__li}>
+            <Link className={styles.menu__div__nav__li__link} to="/about">
+              About us
             </Link>
           </li>
           <>

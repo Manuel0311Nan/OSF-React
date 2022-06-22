@@ -5,6 +5,7 @@ import PageNotFound from "../pages/NotFound"
 import Home from "../pages/Home/Home";
 import Tour from "../pages/Tour/Tour";
 import Songs from "../pages/Songs/Songs";
+import About from "../pages/About/About";
 
 
 const routes = [
@@ -38,6 +39,10 @@ const routes = [
     {
         path: "/songs",
         element: <Songs/>,
+    },
+    {
+        path: "/about",
+        element: <About/>,
     },
 ]
 
