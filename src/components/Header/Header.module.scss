@@ -27,7 +27,7 @@
 
           &__link{
               color: rgb(4, 4, 4); 
-  
+
           }
       }
     }
@@ -44,10 +44,9 @@
   color: darkgrey;
 }
 .bton{
-  width: 3%;
+  width: 20px;
   display: flex;
-  justify-content: center;
-  padding: -1;
+
 
 }
 .bton:hover{
@@ -69,10 +68,13 @@
 @media screen and (max-width: 450px) {
   .menu{
     position: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     &__img{
-      width: 90px;
-      height: 50px;
-      margin-left: 0em;
+      height: 20px;
+      width: 30px;
     }
     &__div {
     &__nav {
@@ -81,7 +83,7 @@
       justify-content: flex-start;
       align-items: center;
       &__li {
-
+width: 10px;
           &__link{
               color: rgb(4, 4, 4); 
   

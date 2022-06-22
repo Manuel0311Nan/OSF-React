@@ -6,13 +6,13 @@
     padding-top: 4em;
     background-color: #080100;
     background-image: url("https://www.transparenttextures.com/patterns/wall-4-light.png");
-    height: 100vh;
+
+    min-height: 100vh;
     width: 100%;
     padding-top: 6em;
     &__portada{
-        width: 60%;
-        height: 500px;
-        border: 2px solid black;
+        width: 100%;
+        min-height: 50vh;
     }
 }
 .disc{
@@ -36,6 +36,25 @@
     font-family: 'Special Elite', cursive;
     text-transform: uppercase;
 }
+@media screen and (max-width: 800px) {
+    .lp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        width: 100%;
+
+}
+.disc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+   padding-bottom: 2em;
+    &__song{
+        margin:0em;}
+        padding: 2em;
+}}
 @media screen and (max-width: 450px) {
     .lp{
         display: flex;

@@ -36,9 +36,6 @@ li {
       border-radius: 10px;
       overflow: hidden;
       transition: 0.5s;
-      &__img{
-          object-fit: cover;
-      }
     }
       &__face {
         padding: 15px;
@@ -58,11 +55,7 @@ li {
         }
       }
   }
-// &__text{
-//     color:white;
-//     font-family: 'Special Elite', cursive;
-//     text-transform: uppercase;
-// }
+
 .list {
   display: flex;
   justify-content: center;
