@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Show.module.scss"
 const Show = (props) => {
   return (
-    <div className={styles.card}>
+    <div className={styles.card} > 
       <img className={styles.card__img} src={props.poster} alt='img' />
       {/* <div  className={styles.card__t}>
       <h1 className={styles.font}>{props.when}</h1>

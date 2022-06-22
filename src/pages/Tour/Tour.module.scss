@@ -6,3 +6,10 @@
 background-color: #080100;
 background-image: url("https://www.transparenttextures.com/patterns/notebook-dark.png");
   }
+
+  @media screen and (max-width: 450px) {
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+  }

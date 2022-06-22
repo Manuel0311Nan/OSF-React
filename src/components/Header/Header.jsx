@@ -28,7 +28,6 @@ export const Header = () => {
         backgroundColor: theme.background,
       }}
     >
-      <label for="menu" className={styles.menu__div}>
         {/* <input type="checkbox" id="menu"></input> */}
         <ul className={styles.menu__div__nav}>
           <li className={styles.menu__div__nav__li}>
@@ -54,7 +53,7 @@ export const Header = () => {
           </li>
           <li className={styles.menu__div__nav__li}>
             <Link className={styles.menu__div__nav__li__link} to="/about">
-              About us
+              About
             </Link>
           </li>
           <>
@@ -76,7 +75,6 @@ export const Header = () => {
             )}
           </>
         </ul>
-      </label>
       <Link className={styles.menu__nav__li__img} to="/home">
         <img src={title} alt="logo" className={styles.menu__img}></img>
       </Link>

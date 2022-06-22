@@ -15,26 +15,26 @@ const Songs = () => {
     }}>
       <img className={styles.lp__portada} src={portada} alt="..."></img>
       <div className={styles.disc}>
-      <h1 className={styles.title}>Disfruta del último LP</h1>
-      <div className={styles.disc__song}>
-        <h1 className={styles.disc__song__title}>Title 1</h1>
-        <audio src={cancion1} controls></audio>
-      </div>
-      <div className={styles.disc__song}>
-        <h1 className={styles.disc__song__title}>Title 2</h1>
-        <audio src={cancion2} controls></audio>
-      </div>
-      <div className={styles.disc__song}>
+        <h1 className={styles.title}>Disfruta del último EP "Awakening"</h1>
+              <div className={styles.disc__song}>
+        <h1 className={styles.disc__song__title}>prey</h1>
+        <audio src={cancion5} controls></audio>
+        </div>
+        <div className={styles.disc__song}>
         <h1 className={styles.disc__song__title}>Disconnected</h1>
         <audio src={cancion3} controls></audio>
-      </div>
-      <div className={styles.disc__song}>
-        <h1 className={styles.disc__song__title}>Title 4</h1>
+        </div>
+              <div className={styles.disc__song}>
+        <h1 className={styles.disc__song__title}>Ascension</h1>
+        <audio src={cancion2} controls></audio>
+        </div>
+        <div className={styles.disc__song}>
+        <h1 className={styles.disc__song__title}>strain</h1>
         <audio src={cancion4} controls></audio>
       </div>
       <div className={styles.disc__song}>
-        <h1 className={styles.disc__song__title}>Title 5</h1>
-        <audio src={cancion5} controls></audio>
+        <h1 className={styles.disc__song__title}>redemption</h1>
+        <audio src={cancion1} controls></audio>
       </div>
       </div>
     </section>

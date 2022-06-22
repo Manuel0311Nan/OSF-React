@@ -16,7 +16,6 @@ const About = () => {
                 (result) => {
                     setIsLoaded(true);
                     setBand(result.data.band);
-                    console.log(result.data.band,"result")
                 },
                 (error) => {
                     setIsLoaded(true);
@@ -24,7 +23,6 @@ const About = () => {
                 }
             );
     }, []);
-    console.log(band, "imprimo")
     if (error) {
         return <div>Error: {error.message}</div>;
     } else if (!isLoaded) {
@@ -38,7 +36,7 @@ const About = () => {
             <h1>One second Faith</h1>
             <ul className={style.container}>
                     {band.map((member) => (
-                        <li className={style.container__card}>
+                        <li className={style.container__card} key={member._id}>
                             <div className={`${style.container__card__front} ${style.container__card__face}`}>
                                 <img className={style.container__card__front__img}  src={member.image} alt="..." width="300px" />
                                 <h2 className={style.container__text}>{member.nickName}</h2>
@@ -48,7 +46,7 @@ const About = () => {
                             <h2 className={style.container__text}>{member.instrument}</h2>
                             </div>
                             </li>
-                    ))};
+                    ))}
                 </ul>
                 </div>
 )}

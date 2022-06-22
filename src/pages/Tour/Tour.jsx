@@ -8,6 +8,7 @@ const Tour = () => {
   const { theme } = useTheme();
   const tour = [
     {
+      id:"1",
       when: "18/03/2017",
       where: "ACAAA, Ávila",
       who: ["Law Maker", " & ", "Noxfilia"],
@@ -16,6 +17,7 @@ const Tour = () => {
         "https://res.cloudinary.com/dcpgr4jjn/image/upload/v1655232053/conciertos/concierto6_veln4o.png",
     },
     {
+      id:"2",
       when: "06/04/2019",
       where: "Sala Inferno's, Móstoles",
       who: ["La sonrisa metálica", " & ", "La revolución del mono"],
@@ -24,6 +26,7 @@ const Tour = () => {
         "https://res.cloudinary.com/dcpgr4jjn/image/upload/v1655232054/conciertos/concierto5_oiwszo.png",
     },
     {
+      id:"3",
       when: "24/05/2019",
       where: "Sala Bazinga, Pinto",
       who: ["Fuck Division"],
@@ -32,6 +35,7 @@ const Tour = () => {
         "https://res.cloudinary.com/dcpgr4jjn/image/upload/v1655232053/conciertos/concierto4_ftoyyu.png",
     },
     {
+      id:"4",
       when: "12/07/2019",
       where: "Sala Venom, Coslada",
       who: ["Sonitum Shelter"],
@@ -40,6 +44,7 @@ const Tour = () => {
         "https://res.cloudinary.com/dcpgr4jjn/image/upload/v1655232054/conciertos/concierto3_gxif5s.png",
     },
     {
+      id: "5",
       when: "04/10/2019",
       where: "Sala Barracudas, Madrid",
       who: ["Son of sorrow", " & ", "Sun of the dying"],
@@ -50,13 +55,13 @@ const Tour = () => {
   ];
   return (
     
-      <div className={styles.container}         style={{
+      <div className={styles.container}  style={{
         backgroundColor: theme.background2,
       }}>
         {tour.map((show) => {
           return (
             <Fade slide>
-            <Show
+              <Show
               where={show.where}
               when={show.when}
               poster={show.poster}
