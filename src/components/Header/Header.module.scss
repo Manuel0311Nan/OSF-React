@@ -68,7 +68,7 @@
 }
 @media screen and (max-width: 450px) {
   .menu{
-    position: relative;
+    position: initial;
     &__img{
       width: 90px;
       height: 50px;
