@@ -36,6 +36,10 @@ const Songs = () => {
         <h1 className={styles.disc__song__title}>redemption</h1>
         <audio src={cancion1} controls></audio>
       </div>
+
+
+
+
       </div>
     </section>
   );

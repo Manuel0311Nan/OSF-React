@@ -43,7 +43,7 @@ const Sentences = () => {
             <h2 className={styles.card__title1} style={{
       color:theme.fontcolor1
     }}> <q>{sentence.Sentence}</q> </h2> 
-            <h3 className={styles.card__title1} style={{
+            <h3 className={styles.card__title2} style={{
       color:theme.fontcolor1
     }}>{sentence.Year}</h3>
             </div>
