@@ -3,14 +3,14 @@ import { useNavigate } from "react-router-dom";
 import { loginUser, useAuthState, useAuthDispatch } from "../../context";
 import VideoAccess from "../../core/videoBackground/VideoAccess";
 import styles from "./login.module.scss";
-
+import { useTheme } from "../../context/Themcontext";
 function Login(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useAuthDispatch();
   let navigate = useNavigate();
   const { loading, errorMessage } = useAuthState(); //lee los valores del loading y errorMessages del contexto
-
+  const { theme } = useTheme();
   const handleLogin = async (e) => {
     e.preventDefault();
 
@@ -53,7 +53,9 @@ function Login(props) {
               />
             </div>
           </div>
-          <button className="btn btn-light" onClick={handleLogin} disabled={loading}>
+          <button className={styles.container__boton}         style={{
+          backgroundColor: theme.background,
+        }} onClick={handleLogin} disabled={loading}>
             login
           </button>
         </form>

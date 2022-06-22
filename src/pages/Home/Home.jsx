@@ -22,7 +22,7 @@ const Home = () => {
       <Link  to="/songs">
       <div className={styles.home__img2}>
           <div className={styles.home__img2__card}>
-            <p className={styles.home__img2__cardText}>New LP</p>
+            <p className={styles.home__img2__cardText}>New EP</p>
           </div>
         </div>
       </Link>

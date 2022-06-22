@@ -6,7 +6,19 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(24, 23, 23, 0.682);
-
+    &__boton{
+        text-decoration: none;
+        padding: 10px;
+        font-weight: 600;
+        font-size: 20px;
+        color: #010101;
+        background-color: rgb(100, 8, 8);
+        border-radius: 6px;
+        border: 2px solid rgb(36, 2, 2);
+        font-family: 'Special Elite', cursive;
+        text-transform: uppercase;
+        margin-bottom: 2em;
+    }
 }
 .text{
     color: rgb(255, 254, 254);
