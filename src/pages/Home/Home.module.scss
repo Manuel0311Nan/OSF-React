@@ -73,40 +73,147 @@
 .home__img2__card:hover {
   opacity: 1;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 850px) {
   .home {
-    &__img {
-        
-      background-size: contain;
-      &__card {
-        background-size: cover;
-      }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #080100;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  
+    &__video {
+      filter: opacity(95%);
+      margin: 4em 0 0 0;
+      width: 40%;
+      padding-top: 2em;
     }
-  }
-}
-@media screen and (max-width: 450px) {
-  .home {
     &__img {
-      width: 250px;
-      height: 150px;
+      background-image: url("../../assets/images/grupoCalle2.jpg");
+      width: 600px;
+      height: 398px;
+      margin: 30px;
       &__card {
-        width: 250px;
-        height: 150px;
-        &Text{
-          font-size: 10px;
+        position: absolute;
+        overflow: hidden;
+        width: 600px;
+        height: 398px;
+        background-color: rgba(31, 31, 31, 0.621);
+        transition: opacity 0.2s;
+        opacity: 0;
+        &Text {
+          position: absolute;
+          top: 30%;
+          left: 30%;
+          color: white;
+          font-size: 100px;
+          font-family: 'Special Elite', cursive;
+          text-transform: uppercase;
         }
       }
     }
     &__img2 {
-      width: 250px;
-      height: 150px;
+      background-image: url("../../assets/images/merch2.png");
+      background-position-x: center;
+      background-position-y: center;
+      width: 600px;
+      height: 398px;
+      margin: 30px;
       &__card {
-        width: 250px;
-        height: 150px;
-        &Text{
-          font-size: 10px;
+        position: absolute;
+        overflow: hidden;
+        width: 600px;
+        height: 398px;
+        background-color: rgba(31, 31, 31, 0.621);
+        transition: opacity 0.2s;
+        opacity: 0;
+        &Text {
+          position: absolute;
+          top: 30%;
+          left: 28%;
+          color: white;
+          font-size: 100px;
+          font-family: 'Special Elite', cursive;
+          text-transform: uppercase;
         }
       }
     }
+  }
+  .home__img__card:hover {
+    opacity: 1;
+  }
+  .home__img2__card:hover {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 450px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #080100;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  
+    &__video {
+      filter: opacity(95%);
+      margin: 4em 0 0 0;
+      width: 40%;
+      padding-top: 2em;
+    }
+    &__img {
+      background-image: url("../../assets/images/grupoCalle3.jpg");
+      width: 300px;
+      height: 200px;
+      margin: 30px;
+      &__card {
+        position: absolute;
+        overflow: hidden;
+        width: 300px;
+        height: 200px;
+        background-color: rgba(31, 31, 31, 0.621);
+        transition: opacity 0.2s;
+        opacity: 0;
+        &Text {
+          position: absolute;
+          top: 30%;
+          left: 30%;
+          color: white;
+          font-size: 50px;
+          font-family: 'Special Elite', cursive;
+          text-transform: uppercase;
+        }
+      }
+    }
+    &__img2 {
+      background-image: url("../../assets/images/merch3.png");
+      background-position-x: center;
+      background-position-y: center;
+      width: 300px;
+      height: 200px;
+      margin: 30px;
+      &__card {
+        position: absolute;
+        overflow: hidden;
+        width: 300px;
+        height: 200px;
+        background-color: rgba(31, 31, 31, 0.621);
+        transition: opacity 0.2s;
+        opacity: 0;
+        &Text {
+          position: absolute;
+          top: 30%;
+          left: 28%;
+          color: white;
+          font-size: 50px;
+          font-family: 'Special Elite', cursive;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  .home__img__card:hover {
+    opacity: 1;
+  }
+  .home__img2__card:hover {
+    opacity: 1;
   }
 }

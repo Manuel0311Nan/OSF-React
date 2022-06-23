@@ -12,7 +12,7 @@ export const Footer = () => {
         backgroundColor: theme.background,
       }}  className={styles.socialMedia}>
         <a
-          href="https://www.facebook.com/search/top?q=one%20second%20faith"
+          href="https://www.facebook.com/onesecondfaith"
           target="_blank"
           rel="noreferrer"
         >

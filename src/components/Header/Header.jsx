@@ -17,7 +17,7 @@ export const Header = () => {
   useEffect(() => {
     if (user) {
       setUserLogger(true);
-    }else{
+    } else {
       setUserLogger(false);
     }
   }, [user]);
@@ -28,56 +28,53 @@ export const Header = () => {
         backgroundColor: theme.background,
       }}
     >
-        {/* <input type="checkbox" id="menu"></input> */}
-        <ul className={styles.menu__div__nav}>
-          <li className={styles.menu__div__nav__li}>
-            <Link
-              className={styles.menu__div__nav__li__link}
-              style={{
-                backgroundColor: theme.background,
-              }}
-              to="/home"
-            >
-              Home
-            </Link>
-          </li>
-          <li className={styles.menu__div__nav__li}>
-            <Link className={styles.menu__div__nav__li__link} to="/tour">
-              Tour
-            </Link>
-          </li>
-          <li className={styles.menu__div__nav__li}>
-            <Link className={styles.menu__div__nav__li__link} to="/songs">
-              Songs
-            </Link>
-          </li>
-          <li className={styles.menu__div__nav__li}>
-            <Link className={styles.menu__div__nav__li__link} to="/about">
-              About
-            </Link>
-          </li>
-          <>
-            {userLogger ? (
-              <li className={styles.menu__div__nav__li}>
-                <Link
-                  className={styles.menu__div__nav__li__link}
-                  to="/dashboard"
-                >
-                  Mi perfil OSF
-                </Link>
-              </li>
-            ) : (
-              <li className={styles.menu__div__nav__li}>
-                <Link className={styles.menu__div__nav__li__link} to="/login">
-                  Acceder
-                </Link>
-              </li>
-            )}
-          </>
-        </ul>
       <Link className={styles.menu__nav__li__img} to="/home">
         <img src={title} alt="logo" className={styles.menu__img}></img>
       </Link>
+      <ul className={styles.menu__div__nav}>
+        <li className={styles.menu__div__nav__li}>
+          <Link
+            className={styles.menu__div__nav__li__link}
+            style={{
+              backgroundColor: theme.background,
+            }}
+            to="/home"
+          >
+            Home
+          </Link>
+        </li>
+        <li className={styles.menu__div__nav__li}>
+          <Link className={styles.menu__div__nav__li__link} to="/tour">
+            Tour
+          </Link>
+        </li>
+        <li className={styles.menu__div__nav__li}>
+          <Link className={styles.menu__div__nav__li__link} to="/songs">
+            Songs
+          </Link>
+        </li>
+        <li className={styles.menu__div__nav__li}>
+          <Link className={styles.menu__div__nav__li__link} to="/about">
+            About
+          </Link>
+        </li>
+        <>
+          {userLogger ? (
+            <li className={styles.menu__div__nav__li}>
+              <Link className={styles.menu__div__nav__li__link} to="/dashboard">
+                Mi perfil OSF
+              </Link>
+            </li>
+          ) : (
+            <li className={styles.menu__div__nav__li}>
+              <Link className={styles.menu__div__nav__li__link} to="/login">
+                Acceder
+              </Link>
+            </li>
+          )}
+        </>
+      </ul>
+
       <input
         className={styles.bton}
         type="image"

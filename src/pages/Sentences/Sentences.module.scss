@@ -37,12 +37,90 @@
 
     }
     &__title1{
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 1000;
         font-family: 'Tangerine', cursive;
     }
     &__title2{
         font-size: 20px;
         font-weight: 500;
+    }
+}
+@media screen and (max-width: 850px) {
+    .title{
+        align-items: center;
+        color: white;
+        font-size: 20px;
+    }
+    .card{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px, 100px);
+        &__body{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: rgba(6, 6, 6, 0);
+        }
+        &__img{
+            border-radius: 25%;
+            margin: 1em;
+        }
+        &__title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+    
+        }
+        &__title1{
+            font-size: 18px;
+            font-weight: 1000;
+            font-family: 'Tangerine', cursive;
+        }
+        &__title2{
+            font-size: 15px;
+            font-weight: 500;
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .title{
+        align-items: center;
+        color: white;
+        font-size: 12px;
+    }
+    .card{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px, 100px);
+        &__body{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: rgba(6, 6, 6, 0);
+        }
+        &__img{
+            border-radius: 25%;
+            margin: 1em;
+        }
+        &__title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+    
+        }
+        &__title1{
+            font-size: 10px;
+            font-weight: 1000;
+            font-family: 'Tangerine', cursive;
+        }
+        &__title2{
+            font-size:8px;
+            font-weight: 500;
+        }
     }
 }
