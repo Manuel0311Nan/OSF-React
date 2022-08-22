@@ -26,9 +26,9 @@ const Home = () => {
           </div>
         </div>
       </Link>
-      <section>
+      {/* <section>
         <Sentences/>
-      </section>
+      </section> */}
     </div>
   );
 };
