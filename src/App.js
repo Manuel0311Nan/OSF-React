@@ -23,7 +23,8 @@ function App() {
   return (
     <AuthProvider>
       <Router>
-      {splashScreen ? (<SplashScreen/>): <><ThemeProvider>
+        {/* {splashScreen ? (<SplashScreen />) : <> */}
+          <ThemeProvider>
           <Header />
           <Routes>
             <Route path="*" element={<Navigate to="/" />} />
@@ -46,7 +47,8 @@ function App() {
             />
           </Routes>
           <Footer />
-        </ThemeProvider></> }
+        </ThemeProvider>
+      {/* </> } */}
         
       </Router>
     </AuthProvider>

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 // import { AuthProvider } from '../../context/context'
 // import { useAuthState } from '../../context/context'
-import"./Header.module.scss";
+import "./Header.module.scss";
 // import title from "../../assets/images/logo.jpg";
 
 // import Container from 'react-bootstrap/Container';
@@ -11,46 +11,46 @@ import"./Header.module.scss";
 
 export const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-dark row">
-      <div className="d-flex flex-column  flex-lg-row pr-5">
-      <a
-            className="navbar-brand w-25 align-self-center d-flex justify-content-center"
-            href="/home"
-            alt=""
-          >
-            <img
-              class="img-fluid w-25 align-content-center"
-              src="https://res.cloudinary.com/manuelcodex/image/upload/v1661268748/conciertos/logoSinFondo_psrbgu.png"
-              alt="logo"
-            />
-          </a>
+    <nav className="navbar navbar-expand-lg  bgBlack row">
+      <div className="d-flex flex-column  flex-lg-row pr-5 ">
+        <a
+          className="navbar-brand w-25 align-self-center d-flex justify-content-center"
+          href="/home"
+          alt=""
+        >
+          <img
+            class="img-fluid w-25 align-content-center ms-3"
+            src="https://res.cloudinary.com/manuelcodex/image/upload/v1661268748/conciertos/logoSinFondo_psrbgu.png"
+            alt="logo"
+          />
+        </a>
         <div
-          className="collapse navbar-collapse fw-bold justify-content-end"
+          className="collapse navbar-collapse  fw-bold justify-content-end"
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav mb-2 mb-lg-0">
             <Link
               to="/tour"
-              className="nav-item align-self-center nav-link linkHover"
+              className=" h4 align-self-center nav-link  text-light"
             >
               Tour
             </Link>
             <Link
               to="/songs"
-              className="nav-item align-self-center shadowLink nav-link "
+              className=" h4 align-self-center nav-link text-light"
             >
               Songs
             </Link>
             <Link
               to="/about"
-              className="nav-item align-self-center shadowLink nav-link "
+              className=" h4 align-self-center nav-link text-light "
             >
               About US
             </Link>
           </ul>
         </div>
         <button
-          className="navbar-toggler border-0 w-25 mx-auto"
+          className="navbar-toggler w-25 align-self-center"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -58,11 +58,14 @@ export const Header = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon border-0"></span>
+          <span className="navbar-toggler-icon">
+            <span class="material-symbols-outlined text-light ciclon">fingerprint</span>
+          </span>
         </button>
       </div>
     </nav>
-)}
+  );
+};
 
 // const { theme, toggleTheme } = useTheme();
 
@@ -101,4 +104,3 @@ export const Header = () => {
 //       />
 //     </header>
 //   );
-

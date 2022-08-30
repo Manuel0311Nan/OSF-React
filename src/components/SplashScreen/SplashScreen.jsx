@@ -7,11 +7,13 @@ const SplashScreen = () => {
     setTimeout(() => setAnimation("fadeOut"), 3000);
   }, []);
   return (
-    <div className="splashScreen">
-      <div className={animation}>
-        <h1 className="text" >conoce a One Second Faith</h1>
+    <section className="bgBlack">
+    <div className="container">
+      <div className="splashScreen ">
+        <h1 className="text aling-self-center" >conoce a One Second Faith</h1>
       </div>
-    </div>
+      </div>
+      </section>
   );
 };
 
