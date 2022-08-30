@@ -1,35 +1,33 @@
 import React from "react";
 import videoClip from "../../assets/images/videoclip.mp4";
-import styles from "./Home.module.scss";
 import { Link } from "react-router-dom";
-import Sentences from "../Sentences/Sentences";
 import { useTheme } from "../../context/Themcontext";
 const Home = () => {
   const { theme } = useTheme();
   return (
-    <div className={styles.home} style={{
-      backgroundColor: theme.background2,
-      color:theme.color1
-    }}>
-      <video className={styles.home__video} controls src={videoClip}></video>
-      <Link  to="/tour">
-        <div className={styles.home__img}>
-          <div className={styles.home__img__card}>
-            <p className={styles.home__img__cardText}>TOUR</p>
-          </div>
+    <section className="home">
+      <div className="container">
+        <div className="d-flex flex-column">
+          <video
+            className="my-3 video"
+            controls
+            src={videoClip}
+          ></video>
+          <Link className="nav-link" to="/tour">
+            <div className="row m-4 link-light text-decoration-none">
+              <img className="col-8 imgTrn" src="https://res.cloudinary.com/manuelcodex/image/upload/v1661875977/conciertos/grupoCalle_zeru7a.jpg" alt="..."></img>
+              <h1 className="col-4 text-center align-self-center textHover">Tour</h1>
+            </div>
+          </Link>
+          <Link className="nav-link" to="/songs">
+            <div className="row m-4 link-light text-decoration-none">
+            <h1 className="col-4 text-center align-self-center  textHover">New EP</h1>
+              <img className="col-8 imgTrn" src="https://res.cloudinary.com/manuelcodex/image/upload/v1661875979/conciertos/GrupoCalleColor_rerpdo.jpg" alt="..."></img>
+            </div>
+          </Link>
         </div>
-      </Link>
-      <Link  to="/songs">
-      <div className={styles.home__img2}>
-          <div className={styles.home__img2__card}>
-            <p className={styles.home__img2__cardText}>New EP</p>
-          </div>
-        </div>
-      </Link>
-      {/* <section>
-        <Sentences/>
-      </section> */}
-    </div>
+      </div>
+    </section>
   );
 };
 

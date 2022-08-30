@@ -61,3 +61,22 @@
   transform: rotate(0.5turn);
   transition: 0.5s ease-in-out;
 }
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #080100;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+.video {
+  filter: opacity(70%);
+  width: 100%;
+  padding-top: 2em;
+}
+.textHover:hover{
+transform: scale(1.8);
+transition: .5s ease-in-out;
+}
+.imgTrn{
+  filter: opacity(80%);
+}
