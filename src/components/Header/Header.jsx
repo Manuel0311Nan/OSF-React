@@ -45,7 +45,7 @@ export const Header = () => {
               to="/about"
               className=" h4 align-self-center nav-link text-light "
             >
-              About US
+              About Us
             </Link>
           </ul>
         </div>

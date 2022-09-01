@@ -1,10 +1,22 @@
-// @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
-// :root{
-//   -font: 'Special Elite', cursive;
-//   -color-primary: 'rgb(100, 8, 8)';
-//   -color-secondary: 'rgb(256, 256, 256)';
-// }
+*{
+  font-family: 'Special Elite', cursive;
+}
+// body {
+//   animation: fadein 1s; 
+//  }
+//  @keyframes fadein {
+//   0% {
+//   opacity:0;
+//   }
+//   50%{
+//   opacity:0.5;
+//   }
+//   100% {
+//   opacity:1;
+//   }
+//  }
 .App {
   text-align: center;
 }
@@ -76,7 +88,18 @@
 .textHover:hover{
 transform: scale(1.8);
 transition: .5s ease-in-out;
+cursor:pointer;
 }
 .imgTrn{
   filter: opacity(80%);
+}
+.aboutBG{
+  background-color: #111111;
+  background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+.aboutHover:hover{
+  transform: scale(1.05);
+  cursor:grab;
+  filter: grayscale(70%);
 }

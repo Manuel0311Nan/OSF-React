@@ -13,32 +13,35 @@ const Songs = () => {
     <section className="lp">
       <div className="container">
         <div className="d-flex flex-column flex-lg-row align-items-center align-items-lg-stretch">
-      <img className="col-8 my-5 ronded" src={portada} alt="..."></img>
-      <div className="col-6 d-flex flex-column align-items-center mt-2">
-        <h1 className="text-light text-center">Disfruta del último EP "Awakening"</h1>
-        <div className="">
-          <h1 className="text-light">prey</h1>
-          <audio src={cancion5} controls></audio>
+          <img className="col-8 my-5 ronded" src={portada} alt="..."></img>
+          <div className="col-6 d-flex flex-column align-items-center mt-2">
+            <h1 className="text-light text-center">
+              Disfruta del último EP "Awakening"
+            </h1>
+            
+            <div className="">
+              <h1 className="text-light text-center text-uppercase">prey</h1>
+              <audio src={cancion5} controls></audio>
+            </div>
+            <div className="">
+              <h1 className="text-light text-center text-uppercase">Disconnected</h1>
+              <audio src={cancion3} controls></audio>
+            </div>
+            <div className="">
+              <h1 className="text-light text-center text-uppercase">Ascension</h1>
+              <audio src={cancion2} controls></audio>
+            </div>
+            <div className="">
+              <h1 className="text-light text-center text-uppercase">strain</h1>
+              <audio src={cancion4} controls></audio>
+            </div>
+            <div className="">
+              <h1 className="text-light text-center text-uppercase">redemption</h1>
+              <audio src={cancion1} controls></audio>
+            </div>
+          </div>
         </div>
-        <div className="">
-          <h1 className="text-light">Disconnected</h1>
-          <audio src={cancion3} controls></audio>
-        </div>
-        <div className="">
-        <h1 className="text-light">Ascension</h1>
-        <audio src={cancion2} controls></audio>
-</div>
-      <div className="">
-        <h1 className="text-light">strain</h1>
-        <audio src={cancion4} controls></audio>
       </div>
-      <div className="">
-        <h1 className="text-light">redemption</h1>
-        <audio src={cancion1} controls></audio>
-        </div>
-        </div>
-        </div>
-        </div>
     </section>
   );
 };
