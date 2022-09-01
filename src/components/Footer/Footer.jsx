@@ -8,6 +8,7 @@ import { useTheme } from "../../context/Themcontext";
 export const Footer = () => {
   const { theme} = useTheme();
   return (
+    <>
       <div  style={{
         backgroundColor: theme.background,
       }}  className={styles.socialMedia}>
@@ -44,6 +45,9 @@ export const Footer = () => {
             alt="youtube"
           ></img>
         </a>
+        <div className="fw-bold text-right"> By manuelcodex</div>
       </div>
+
+      </>
   );
 };
