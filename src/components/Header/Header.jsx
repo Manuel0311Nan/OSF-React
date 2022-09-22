@@ -29,12 +29,12 @@ export const Header = () => {
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav mb-2 mb-lg-0">
-            <Link
+            {/* <Link
               to="/tour"
               className=" h4 align-self-center nav-link  text-light"
             >
               Tour
-            </Link>
+            </Link> */}
             <Link
               to="/songs"
               className=" h4 align-self-center nav-link text-light"

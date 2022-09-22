@@ -45,7 +45,7 @@ export const Footer = () => {
             alt="youtube"
           ></img>
         </a>
-        <div className="fw-bold text-right"> By manuelcodex</div>
+        {/* <div className="fw-bold text-right"> By manuelcodex</div> */}
       </div>
 
       </>
