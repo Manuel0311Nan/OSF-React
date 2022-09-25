@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 // import { useAuthState } from '../../context/context'
 import "./Header.module.scss";
 // import title from "../../assets/images/logo.jpg";
-
+import spotify from "../../assets/images/spotify3.png"
 // import Container from 'react-bootstrap/Container';
 // import Nav from 'react-bootstrap/Nav';
 // import Navbar from 'react-bootstrap/Navbar';
-
+import styles from "./Header.module.scss";
 export const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg  bgBlack ">
@@ -24,14 +24,24 @@ export const Header = () => {
             alt="logo"
           />
         </a>
-        <div>
-          
-        </div>
+        
         <div
           className="collapse navbar-collapse  fw-bold justify-content-end"
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav mb-2 mb-lg-0">
+          <a
+          href="https://open.spotify.com/artist/6tFCiZQRje5CSFkkt4sQ7D"
+          target="_blank"
+              rel="noreferrer"
+              className=" h4 align-self-center nav-link text-light"
+        >
+          <img
+            className={styles.socialMedia__link}
+            src={spotify}
+            alt="spotify"
+          ></img>
+        </a>
             {/* <Link
               to="/tour"
               className=" h4 align-self-center nav-link  text-light"
