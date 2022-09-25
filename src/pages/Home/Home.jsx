@@ -11,7 +11,7 @@ const Home = () => {
 
 
 <p class="intro-text">
-  A few days ago, during...
+It has finally arrived
 </p>
 
 

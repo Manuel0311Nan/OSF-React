@@ -11,8 +11,8 @@ import "./Header.module.scss";
 
 export const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg  bgBlack row">
-      <div className="d-flex flex-column  flex-lg-row pr-5 ">
+    <nav className="navbar navbar-expand-lg  bgBlack ">
+      <div className="d-flex flex-column  flex-lg-row justify-content-between pr-5  w-100">
         <a
           className="navbar-brand w-25 align-self-center d-flex justify-content-center"
           href="/home"

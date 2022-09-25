@@ -4,14 +4,29 @@ import styles from "./Footer.module.scss";
 import facebook from "../../assets/images/facebook.png";
 import instagram from "../../assets/images/instagram(3).png";
 import youtube from "../../assets/images/youtube.png";
+import spotify from "../../assets/images/spotify.png"
 import { useTheme } from "../../context/Themcontext";
 export const Footer = () => {
-  const { theme} = useTheme();
+  const { theme } = useTheme();
   return (
     <>
-      <div  style={{
-        backgroundColor: theme.background,
-      }}  className={styles.socialMedia}>
+      <div
+        style={{
+          backgroundColor: theme.background,
+        }}
+        className={styles.socialMedia}
+      >
+        <a
+          href="https://open.spotify.com/artist/6tFCiZQRje5CSFkkt4sQ7D"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            className={styles.socialMedia__link}
+            src={spotify}
+            alt="spotify"
+          ></img>
+        </a>
         <a
           href="https://www.facebook.com/onesecondfaith"
           target="_blank"
@@ -47,7 +62,6 @@ export const Footer = () => {
         </a>
         {/* <div className="fw-bold text-right"> By manuelcodex</div> */}
       </div>
-
-      </>
+    </>
   );
 };
