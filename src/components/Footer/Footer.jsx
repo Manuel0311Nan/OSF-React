@@ -9,13 +9,14 @@ import { useTheme } from "../../context/Themcontext";
 export const Footer = () => {
   const { theme } = useTheme();
   return (
-    <>
+    < >
       <div
         style={{
           backgroundColor: theme.background,
         }}
-        className={styles.socialMedia}
+        className="d-flex flex-column justify-content-center"
       >
+      <div className="d-flex justify-content-center">
         <a
           href="https://open.spotify.com/artist/6tFCiZQRje5CSFkkt4sQ7D"
           target="_blank"
@@ -59,8 +60,9 @@ export const Footer = () => {
             src={youtube}
             alt="youtube"
           ></img>
-        </a>
-        {/* <div className="fw-bold text-right"> By manuelcodex</div> */}
+          </a>
+        </div>
+        <div className="fw-bold text-center text-white"> By manuelcodex</div>
       </div>
     </>
   );

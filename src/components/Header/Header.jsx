@@ -24,6 +24,9 @@ export const Header = () => {
             alt="logo"
           />
         </a>
+        <div>
+          
+        </div>
         <div
           className="collapse navbar-collapse  fw-bold justify-content-end"
           id="navbarSupportedContent"
