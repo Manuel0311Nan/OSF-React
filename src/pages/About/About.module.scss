@@ -5,6 +5,9 @@
   font-family: "Special Elite", cursive;
   text-transform: uppercase;
 }
+.bigPho{
+  height: 50px;
+}
 li {
   list-style: none;
 }
@@ -68,4 +71,38 @@ li {
 
 .container__card:hover .container__card__back {
     transform: perspective(600px) rotateY(360deg);
+}
+
+#app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+.swiper-button-nex, .swiper-button-prev{
+  color: none;
 }

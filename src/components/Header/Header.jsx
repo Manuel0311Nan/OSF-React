@@ -19,7 +19,7 @@ export const Header = () => {
           alt=""
         >
           <img
-            class="img-fluid w-25 align-content-center ms-3"
+            className="img-fluid w-25 align-content-center ms-3"
             src="https://res.cloudinary.com/manuelcodex/image/upload/v1661268748/conciertos/logoSinFondo_psrbgu.png"
             alt="logo"
           />
@@ -72,7 +72,7 @@ export const Header = () => {
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon">
-            <span class="material-symbols-outlined text-light ciclon">fingerprint</span>
+            <span className="material-symbols-outlined text-light ciclon">fingerprint</span>
           </span>
         </button>
       </div>

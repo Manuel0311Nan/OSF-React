@@ -1,12 +1,17 @@
 import React, { useState, useEffect } from "react";
 // import { useTheme } from '../../context/Themcontext';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectFade, Navigation, Pagination } from "swiper";
 import { BASE_URL } from "../../assets/apiRoutes";
+
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "./About.module.scss"
 // import { Link } from 'react-router-dom';
 const About = () => {
-  // const { theme } = useTheme();
-//   const [error, setError] = useState(null);
-//   const [isLoaded, setIsLoaded] = useState(false);
-  // const [band, setBand] = useState([]);
+
   let [abot, setAbot] = useState([]);
 
   useEffect(() => {
@@ -14,16 +19,32 @@ const About = () => {
       .then((response) => response.json())
       .then((data) => setAbot(data));
   }, []);
-//   if (error) {
-//     return <div>Error: {error.message}</div>;
-//   } else if (!isLoaded) {
-//     return <div>Loading...</div>;
-//   } else {
-    return (
+
+  return (
+    <section className="lp">
+      <Swiper
+        spaceBetween={30}
+        effect={"fade"}
+        navigation={true}
+        pagination={{
+                clickable: true,
+                type: 'bullets',
+        }}
+      
+        modules={[EffectFade, Navigation, Pagination]}
+        className="mySwiper container"
+    >
+      {abot.map((about, key) => (
+        <SwiperSlide key={about._id} className="">
+          <img src={about.image} alt={about.name}  className="col-12 "/>
+        </SwiperSlide>
+
+      ))}
+        </Swiper>
         <section className="aboutBG">
-      <div className="container">
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 ">
-          {abot.map((about, key) => (
+           <div className="">
+           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 ">
+           {abot.map((about, key) => (
             <section key={about._id} className="col">
               <div className="card m-2 bg-transparent ">
                 <img
@@ -42,7 +63,7 @@ const About = () => {
         </div>
             </div>
             </section>
+            </section>
     );
   }
-// };
 export default About;
