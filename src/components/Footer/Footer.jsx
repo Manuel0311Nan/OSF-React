@@ -5,6 +5,7 @@ import facebook from "../../assets/images/facebook.png";
 import instagram from "../../assets/images/instagram(3).png";
 import youtube from "../../assets/images/youtube.png";
 import spotify from "../../assets/images/spotify.png"
+import viking from "../../assets/images/vikingo.png"
 import { useTheme } from "../../context/Themcontext";
 export const Footer = () => {
   const { theme } = useTheme();
@@ -62,7 +63,7 @@ export const Footer = () => {
           ></img>
           </a>
         </div>
-        <div className="fw-bold text-center text-white"> By manuelcodex</div>
+        <div className="fw-bold text-center text-white"> By littleOdin <img width={20} src={viking} alt="littleOdin"></img> </div>
       </div>
     </>
   );
