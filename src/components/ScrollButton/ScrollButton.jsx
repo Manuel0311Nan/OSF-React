@@ -30,7 +30,7 @@ export const ScrollButton = () => {
     return (
         isVisible && (
             <button 
-                className="animate__animated animate__flash"
+                className="animate__animated animate__flash d-none d-lg-block"
                 onClick={scrollToBottom} 
                 style={{
                     position: 'fixed',

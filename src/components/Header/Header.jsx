@@ -42,12 +42,12 @@ export const Header = () => {
             alt="spotify"
           ></img>
         </a>
-            {/* <Link
+            <Link
               to="/tour"
               className=" h4 align-self-center nav-link  text-light"
             >
               Tour
-            </Link> */}
+            </Link>
             <Link
               to="/songs"
               className=" h4 align-self-center nav-link text-light"
